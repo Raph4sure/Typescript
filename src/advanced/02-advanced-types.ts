@@ -36,11 +36,11 @@ const data: Json = {
 
 // Recursive Utility Types
 type DeepReadonly<T> = {
-  readonly [P in keyof T]: T[P] extends object ? DeepReadonly<T[P]> : T[P];
+  readonly [P in keyof T]: T[P] extends Record<string, any> ? DeepReadonly<T[P]> : T[P];
 };
 
 type DeepPartial<T> = {
-  [P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P];
+  [P in keyof T]?: T[P] extends Record<string, any> ? DeepPartial<T[P]> : T[P];
 };
 
 // Template Literal Types

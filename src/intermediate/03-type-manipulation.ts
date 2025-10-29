@@ -130,11 +130,11 @@ type T6 = NonNullable<string | number | null | undefined>; // string | number
 
 // Custom Utility Types
 type DeepPartial<T> = {
-  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+  [K in keyof T]?: T[K] extends Record<string, any> ? DeepPartial<T[K]> : T[K];
 };
 
 type DeepReadonly<T> = {
-  readonly [K in keyof T]: T[K] extends object ? DeepReadonly<T[K]> : T[K];
+  readonly [K in keyof T]: T[K] extends Record<string, any> ? DeepReadonly<T[K]> : T[K];
 };
 
 // Type Guards

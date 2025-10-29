@@ -1,14 +1,7 @@
 {
     "compilerOptions": {
-        "allowJs": true,
-        "checkJs": true,
-
-        "outDir": "build",
-        "target": "esnext",
-        // if typescript want to be used just for type checking on an existing or new javascript file, then use this below
-        // "target": "ES6",
-        // change noEmit to false
-        "noEmit": true
+        "target": "ES6",
+        "outDir": "dist"
     },
-    "include": ["src/**/*"]
+    "include": ["**.ts*"]
 }

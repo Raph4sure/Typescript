@@ -1,0 +1,20 @@
+{
+  "name": "typescript-mastery",
+  "version": "1.0.0",
+  "description": "A comprehensive guide to mastering TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["typescript", "learning", "tutorial", "examples"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,9 +1,5 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "outDir": "dist"
-    },
-    "include": [
-        "**.ts"
-    ]
+        "target": "esnext",
+    }
 }

@@ -1,12 +1,3 @@
-// function query<T>(
-//     items: T[],
-//     query: any // <--- replace this!
-
-// interface Query {
-//     name: string,
-//     age: number,
-// }
-
 function query<T>(
     items: T[],
     query: { [Tprop in keyof T]?: (val: T[Tprop]) => boolean }
